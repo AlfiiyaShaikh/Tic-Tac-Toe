@@ -1,0 +1,60 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+
+}
+#wrapper{
+    background-image: url("https://img.freepik.com/free-photo/vivid-blurred-colorful-wallpaper-background_58702-3798.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    background-position:center;
+    display: grid;
+    place-items: center;
+}
+
+.game-info,.btn{
+    background-color: rgba(144, 137, 125, 0.159);
+    padding: 0.5rem;
+    width: fit-content;
+    border: 1px solid rgba(82, 77, 70, 0.159);
+    border-radius: 0.5rem;
+}
+
+.boxes{
+    width: 90%;
+    max-width:200px;
+    background-color: rgba(144, 137, 125, 0.159);
+    border: 1px solid rgba(82, 77, 70, 0.159);
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 0.5rem;
+}
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box1,.box2,.box4,.box5{
+    border-right:  1px solid rgba(150, 158, 174, 0.64) ;
+    border-bottom: 1px solid rgba(150, 158, 174, 0.64) ;
+}
+.box6,.box9{
+    border-top:  1px solid rgba(150, 158, 174, 0.64) ;
+    
+}
+.box7,.box8{
+    
+    border-right: 1px solid rgba(150, 158, 174, 0.64) ;
+}
+.win{
+    background-color: #9716a385;
+}
+.invisible{
+    visibility: hidden;
+}
